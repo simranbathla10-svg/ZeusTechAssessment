@@ -1,23 +1,23 @@
 pipeline{
-  agent any 
-  stages{
-    stage('Build'){
-         steps{echo "Build successfully executed"
+agent any
+stages 
+{
+stage('Build') 
+{
+steps{
+echo "Building the Project.........."
 }
 }
-
-   stage('Test'){
-        steps{echo "Test successfully executed"
+stage('Test') 
+{
+steps{
+echo "Testing the Project.........."
 }
 }
-
-   stage('Deploy'){
-       steps{echo "Deploy successfully executed"
-}
-}
-
-   stage('Release'){
-       steps{echo "Release successfully executed"
+stage('Deploy') 
+{
+steps{
+echo "Deploying the Project.........."
 }
 }
 }
